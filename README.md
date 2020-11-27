@@ -26,10 +26,10 @@ _En el repo ya está incluido en package.json por lo que solo ejecutando npm ins
 
 _En caso de que quieras instalarlas de forma manual_
 
-**react y router**
+**router**
 
 ```
-npm i react react-dom react-router-dom
+npm i react-router-dom
 ```
 
 **Estilos**

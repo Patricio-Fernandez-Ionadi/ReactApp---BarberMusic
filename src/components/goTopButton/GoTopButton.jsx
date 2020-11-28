@@ -23,6 +23,7 @@ export default function GoTopButton() {
 		}
 	}
 	window.onscroll = showButton
+
 	const scrollToTop = (duration) => {
 		if (document.scrollingElement.scrollTop === 0) return
 

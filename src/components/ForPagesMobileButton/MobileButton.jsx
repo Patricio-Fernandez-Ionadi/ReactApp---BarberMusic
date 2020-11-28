@@ -13,6 +13,7 @@ const useStyles = makeStyles({
 		backgroundColor: "rgba(0, 0, 0, .5)",
 		borderRadius: "50%",
 		border: "none",
+		cursor: "pointer",
 	},
 })
 

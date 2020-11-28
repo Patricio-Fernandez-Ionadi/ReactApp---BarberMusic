@@ -7,6 +7,7 @@ _Practica independiente para pagina comercial_
 _vista del Home - Mobile_
 
 ![homeMobile](/public/assets/vistaInterfaz/HomeMobile.png)
+![homeMobile](/public/assets/vistaInterfaz/HomeMobile1.png)
 
 ## Comenzando 🚀
 
@@ -51,9 +52,9 @@ _Agrega notas adicionales sobre como hacer deploy_ -->
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Herramientas utilizadas para crear este proyecto_
 
-- [React](https://reactjs.org/) - El framework web usado
+- [React](https://reactjs.org/) - La libreria JS usada
 - [Material-ui](https://material-ui.com/) - Sistema de diseño
 - [Pexels](https://www.pexels.com/es-es/) - Fotografías
 

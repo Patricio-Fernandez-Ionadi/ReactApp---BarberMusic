@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		height: "100vh",
 		maxHeight: "100vh",
+		backgroundColor: "rgba(0, 0, 0, .3)", // fallback
 		backgroundImage: ({ bgImage }) => `url(${bgImage})`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",

@@ -1,7 +1,7 @@
 import React from "react"
 import { Route } from "react-router-dom"
 // Components
-import VolumeHandler from "./components/MusicHandler/VolumeHandler"
+import NavBar from "./components/NavigationBar/NavBar"
 import TrackSelector from "./components/MusicHandler/TrackSelector"
 import GoTopButton from "./components/goTopButton/GoTopButton"
 // pages
@@ -14,7 +14,7 @@ function App() {
 	return (
 		<>
 			<MusicContextProvider>
-				<VolumeHandler />
+				<NavBar />
 				<TrackSelector />
 			</MusicContextProvider>
 			<Route exact path='/' component={Home} />

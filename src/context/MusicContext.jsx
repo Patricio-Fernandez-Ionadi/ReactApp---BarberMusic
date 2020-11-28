@@ -35,7 +35,7 @@ export function MusicContextProvider({ children }) {
 
 	return (
 		<MusicContext.Provider
-			value={{ isPlaying, setIsMusicPlaying, setTrackSelected }}
+			value={{ isPlaying, setIsMusicPlaying, setTrackSelected, trackSelected }}
 		>
 			<audio
 				ref={hardcore}

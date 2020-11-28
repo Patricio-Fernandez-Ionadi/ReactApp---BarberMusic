@@ -18,16 +18,25 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 	},
 	comercialHook: {
-		color: "green",
+		color: "darkcyan",
+		fontWeight: "bold",
+		fontSize: "2em",
+	},
+	span: {
+		color: "#ccc",
 	},
 }))
 
-export default function Hero({ bgImage, title }) {
+export default function Hero({ bgImage, title, firstspan, secondspan }) {
 	const classes = useStyles({ bgImage })
 	return (
 		<div className={classes.hero}>
 			<div className={classes.contentContainer}>
-				<div className={classes.comercialHook}>{title}</div>
+				<div className={classes.comercialHook}>
+					<span className={classes.span}>{firstspan}</span>
+					{title}
+					<span className={classes.span}>{secondspan}</span>
+				</div>
 			</div>
 		</div>
 	)

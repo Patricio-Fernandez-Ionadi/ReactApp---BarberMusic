@@ -5,7 +5,12 @@ import Hero from "../components/HeroForPages/Hero"
 export default function Home() {
 	return (
 		<>
-			<Hero bgImage='assets/images/barba1.jpg' title='WE DO IT FOR YOU' />
+			<Hero
+				bgImage='assets/images/barba1.jpg'
+				firstspan='WE '
+				title='DO IT '
+				secondspan='FOR YOU'
+			/>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
 				adipisci veniam facere sint libero. Minus, dolorem sapiente. Voluptatem

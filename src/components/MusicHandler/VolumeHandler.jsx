@@ -6,15 +6,6 @@ import { makeStyles } from "@material-ui/core"
 import MusicContext from "../../context/MusicContext"
 import MobileButton from "../MobileButton/MobileButton"
 const useStyles = makeStyles({
-	volumeButton: {
-		position: "fixed",
-		zIndex: 99,
-		padding: "10px",
-		margin: "20px",
-		backgroundColor: "rgba(0, 0, 0, .5)",
-		borderRadius: "50%",
-		border: "none",
-	},
 	volumeIcon: {
 		color: "#ccc",
 	},

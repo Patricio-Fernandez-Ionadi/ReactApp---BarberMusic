@@ -51,7 +51,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TrackSelector() {
 	const classes = useStyles()
-	const { setIsMusicPlaying, setTrackSelected } = useContext(MusicContext)
+	const { setIsMusicPlaying, setTrackSelected, trackSelected } = useContext(
+		MusicContext
+	)
 
 	const [canSelectTrack, setCanSelectTrack] = useState(false)
 
@@ -95,14 +97,14 @@ export default function TrackSelector() {
 					onClick={handleTrackSelected}
 					value={1}
 				>
-					Hardcore
+					{trackSelected === 1 ? `IkuD - Selected` : `IkuD`}
 				</li>
 				<li
 					className={classes.trackLabel}
 					onClick={handleTrackSelected}
 					value={2}
 				>
-					Relax
+					{trackSelected === 2 ? `Lealtad - Selected` : `Lealtad`}
 				</li>
 			</ul>
 		</>

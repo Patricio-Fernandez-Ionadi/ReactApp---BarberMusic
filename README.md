@@ -16,7 +16,7 @@ El proyecto es una practica por lo que cualquier recomendacion/critica será bie
 
 - [Escribime por Facebook](https://www.facebook.com/patricio.fernandezionadi/)
 - [Escribime por Instagram](https://www.instagram.com/ionadipatriciofernandez/)
-- [Escribime por LinkedIn](www.linkedin.com/in/patricio-fernandez-ionadi-12320015b)
+- [Escribime por LinkedIn](https://www.linkedin.com/in/patricio-fernandez-ionadi-12320015b)
 
 ### Pre-requisitos 📋
 

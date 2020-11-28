@@ -4,7 +4,7 @@ import VolumeOffIcon from "@material-ui/icons/VolumeOff"
 import { makeStyles } from "@material-ui/core"
 // Context
 import MusicContext from "../../context/MusicContext"
-import MobileButton from "../MobileButton/MobileButton"
+import MobileButton from "../ForPagesMobileButton/MobileButton"
 const useStyles = makeStyles({
 	volumeIcon: {
 		color: "#ccc",

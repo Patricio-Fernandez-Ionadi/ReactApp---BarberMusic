@@ -8,7 +8,7 @@ const useStyles = makeStyles({
 		left: ({ left }) => `${left}px`,
 		bottom: ({ bottom }) => `${bottom}px`,
 		right: ({ right }) => `${right}px`,
-		zIndex: 99,
+		zIndex: 10,
 		padding: "10px",
 		backgroundColor: "rgba(0, 0, 0, .5)",
 		borderRadius: "50%",
@@ -23,8 +23,34 @@ export default function MobileButton({
 	bottom,
 	right,
 	clickEvent,
+	expectedprops,
 }) {
 	const classes = useStyles({ top, left, bottom, right })
+	if (expectedprops) {
+		console.log("MobileButton", {
+			children: "jsx component",
+			top: {
+				type: "number",
+				format: "pixels",
+				desc: "Pixels from top",
+			},
+			left: {
+				type: "number",
+				format: "pixels",
+				desc: "Pixels from left",
+			},
+			bottom: {
+				type: "number",
+				format: "pixels",
+				desc: "Pixels from bottom",
+			},
+			right: {
+				type: "number",
+				format: "pixels",
+				desc: "Pixels from right",
+			},
+		})
+	}
 	return (
 		<button className={classes.mobileButton} onClick={clickEvent}>
 			{children}

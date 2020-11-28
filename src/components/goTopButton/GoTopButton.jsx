@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 // Components
-import MobileButton from "../MobileButton/MobileButton"
+import MobileButton from "../ForPagesMobileButton/MobileButton"
 // Styles
 import LastPageIcon from "@material-ui/icons/LastPage"
 import { makeStyles } from "@material-ui/core"

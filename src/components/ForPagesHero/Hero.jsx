@@ -27,8 +27,31 @@ const useStyles = makeStyles((theme) => ({
 	},
 }))
 
-export default function Hero({ bgImage, title, firstspan, secondspan }) {
+export default function Hero({
+	bgImage,
+	title,
+	firstspan,
+	secondspan,
+	expectedprops,
+}) {
 	const classes = useStyles({ bgImage })
+	if (expectedprops) {
+		console.log("Hero", {
+			bgImage: "ruta de imagen",
+			title: {
+				color: "cyan",
+				location: "center",
+			},
+			firstspan: {
+				color: "ccc",
+				location: "left",
+			},
+			secondspan: {
+				color: "ccc",
+				location: "right",
+			},
+		})
+	}
 	return (
 		<div className={classes.hero}>
 			<div className={classes.contentContainer}>

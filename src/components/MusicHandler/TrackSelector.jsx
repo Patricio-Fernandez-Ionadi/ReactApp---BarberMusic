@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: "3px",
 		cursor: "pointer",
 		transition: "background-color .2s ease",
+		"&:hover": {
+			backgroundColor: "rgba(204, 204, 204, .5)",
+		},
 	},
 	trackListOppener: {
 		position: "absolute",

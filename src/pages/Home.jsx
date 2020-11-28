@@ -1,6 +1,6 @@
 import React from "react"
 // Components
-import Hero from "../components/HeroForPages/Hero"
+import Hero from "../components/ForPagesHero/Hero"
 
 export default function Home() {
 	return (

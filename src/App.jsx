@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 // Components
 import VolumeHandler from "./components/MusicHandler/VolumeHandler"
 import TrackSelector from "./components/MusicHandler/TrackSelector"
+import GoTopButton from "./components/goTopButton/GoTopButton"
 // pages
 import Home from "./pages/Home"
 import Services from "./pages/Services"
@@ -18,6 +19,7 @@ function App() {
 			</MusicContextProvider>
 			<Route exact path='/' component={Home} />
 			<Route exact path='/services' component={Services} />
+			<GoTopButton />
 		</>
 	)
 }

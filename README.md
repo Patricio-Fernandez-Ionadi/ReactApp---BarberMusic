@@ -2,6 +2,12 @@
 
 _Practica independiente para pagina comercial_
 
+## Vistas
+
+_vista del Home - Mobile_
+
+![homeMobile](/public/assets/vistaInterfaz/HomeMobile.png)
+
 ## Comenzando 🚀
 
 _Las imagenes usadas son de uso libre extraidas de [pexels.com](https://www.pexels.com/es-es/)_

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 		transition: ({ imgSlider, currentPosition }) =>
 			currentPosition === imgSlider.length || currentPosition === 0
 				? `none`
-				: `all .15s ease`,
+				: `all 1s ease`,
 		position: "relative",
 		zIndex: "-1",
 		right: ({ currentPosition }) => `${currentPosition * 100}%`,

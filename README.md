@@ -75,7 +75,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Personas que ayudaron en el desarrollo_
 
-:foreveralone:
+![Oleg Kuzmych](https://github.com/Agnael)
 
 <!-- - **Andrés Villanueva** - _Trabajo Inicial_ - [villanuevand](https://github.com/villanuevand)
 - **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal) -->

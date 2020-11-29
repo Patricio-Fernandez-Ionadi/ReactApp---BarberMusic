@@ -30,7 +30,7 @@ export default function MobileMenu() {
 					<MenuIcon className={classes.menuIcon} />
 				)}
 			</MobileButton>
-			{isOpen ? <MobileMenuList /> : null}
+			<MobileMenuList isopen={isOpen} />
 		</>
 	)
 }

@@ -40,9 +40,9 @@ export function MusicContextProvider({ children }) {
 			<audio
 				ref={hardcore}
 				src='./assets/media/hardcore.mp3'
-				attrValue={1}
+				attrvalue={1}
 			></audio>
-			<audio ref={relax} src='./assets/media/relax.mp3' attrValue={2}></audio>
+			<audio ref={relax} src='./assets/media/relax.mp3' attrvalue={2}></audio>
 			{children}
 		</MusicContext.Provider>
 	)

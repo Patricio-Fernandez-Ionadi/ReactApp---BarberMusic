@@ -1,6 +1,7 @@
 import React from "react"
 // Components
 import Hero from "../components/ForPagesHero/Hero"
+import Carousel from "../components/Carousel/Carousel"
 // Styles
 import { makeStyles } from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({
@@ -85,7 +86,13 @@ export default function Home() {
 			</section>
 
 			<section className={classes.sectionContainer}>
-				<Hero title='slider' />
+				<Carousel
+					images={[
+						"/assets/images/prices1.jpg",
+						"/assets/images/prices2.jpg",
+						"/assets/images/prices3.jpg",
+					]}
+				/>
 			</section>
 
 			<div>

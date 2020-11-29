@@ -1,8 +1,33 @@
 import React from "react"
 // Components
 import Hero from "../components/ForPagesHero/Hero"
+// Styles
+import { makeStyles } from "@material-ui/core"
+const useStyles = makeStyles((theme) => ({
+	sectionContainer: {
+		margin: "20px 0",
+		display: "flex",
+		flexDirection: "column",
+		"& h2": {
+			backgroundColor: "#222",
+			color: "darkcyan",
+			minWidth: "50%",
+			display: "inline-block",
+			margin: "0 auto",
+			textAlign: "center",
+		},
+		"& h3, p": {
+			textAlign: "center",
+		},
+		"& h4": {
+			textAlign: "center",
+			margin: 0,
+		},
+	},
+}))
 
 export default function Home() {
+	const classes = useStyles()
 	return (
 		<>
 			<Hero
@@ -11,7 +36,7 @@ export default function Home() {
 				title='DO IT '
 				secondspan='FOR YOU'
 			/>
-			<section>
+			<section className={classes.sectionContainer}>
 				<h2>What we do?</h2>
 				<p>
 					Since 2009 dolor sit amet consectetur adipisicing elit. Facilis
@@ -21,56 +46,45 @@ export default function Home() {
 					dolorem blanditiis fuga quidem, debitis rem saepe nobis ex
 					exercitationem modi animi.
 				</p>
-				<h3>- We are waiting for you! -</h3>
+				<h4>- We are waiting for you! -</h4>
 			</section>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<h2>Our Services</h2>
 				<div>
-					<h3>Service</h3>
+					<h3>Corte</h3>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-						explicabo quos, recusandae optio adipisci ullam.
+						Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
 					</p>
 				</div>
 				<div>
-					<h3>Service</h3>
+					<h3>Barba</h3>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-						explicabo quos, recusandae optio adipisci ullam.
+						Afeitada tradicional o recorte de barba. Contamos con el servicio de
+						toalla caliente.
 					</p>
 				</div>
 				<div>
-					<h3>Service</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-						explicabo quos, recusandae optio adipisci ullam.
-					</p>
+					<h3>Alisado</h3>
+					<p>A veces es necesario. Date una vuelta y lo evaluamos.</p>
 				</div>
 				<div>
-					<h3>Service</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-						explicabo quos, recusandae optio adipisci ullam.
-					</p>
+					<h3>Color</h3>
+					<p>Las tendencias y los tonos cambian. Animate vos también.</p>
 				</div>
 				<div>
-					<h3>Service</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-						explicabo quos, recusandae optio adipisci ullam.
-					</p>
+					<h3>Decoloracion</h3>
+					<p>Encontrar el tono justo para tu estilo es nuestro objetivo.</p>
 				</div>
 				<div>
-					<h3>Service</h3>
+					<h3>Niños</h3>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-						explicabo quos, recusandae optio adipisci ullam.
+						El mini BACAN sabe lo que quiere, por eso atendemos sus antojos.
 					</p>
 				</div>
 			</section>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<Hero title='slider' />
 			</section>
 
@@ -78,7 +92,7 @@ export default function Home() {
 				<hr />
 			</div>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<Hero title='gallery' />
 			</section>
 
@@ -86,7 +100,7 @@ export default function Home() {
 				<hr />
 			</div>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<h2>Subsidiary</h2>
 				<div>
 					<h3>Branch Name</h3>
@@ -114,7 +128,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<h2>Socials</h2>
 				<div>
 					<p>icon</p>
@@ -124,7 +138,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<h2>Send us your consultation</h2>
 				<form>
 					<label htmlFor='name'>Name</label>
@@ -141,7 +155,7 @@ export default function Home() {
 				</form>
 			</section>
 
-			<section>
+			<section className={classes.sectionContainer}>
 				<h2>FOOTER</h2>
 			</section>
 		</>

@@ -10,7 +10,6 @@ import MobileMenuList from "./MobileMenuList"
 const useStyles = makeStyles({
 	menuIcon: {
 		color: "#ccc",
-		zIndex: 20,
 	},
 })
 

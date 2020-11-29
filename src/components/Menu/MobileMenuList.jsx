@@ -1,9 +1,18 @@
 import React from "react"
+import { makeStyles } from "@material-ui/core"
+
+const useStyles = makeStyles((theme) => ({
+	openMenu: {
+		width: "100vw",
+		height: "100vh",
+		maxHeight: "100vh",
+		backgroundColor: "darkcyan",
+		overflow: "hidden",
+		position: "absolute",
+	},
+}))
 
 export default function MobileMenuList() {
-	return (
-		<div>
-			<h1>MY LIST</h1>
-		</div>
-	)
+	const classes = useStyles()
+	return <div>{/* <div className={classes.openMenu}></div> */}</div>
 }

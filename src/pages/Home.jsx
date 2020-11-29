@@ -2,6 +2,7 @@ import React from "react"
 // Components
 import Hero from "../components/ForPagesHero/Hero"
 import Carousel from "../components/ForPagesCarousel/Carousel"
+import MasonryGallery from "../components/ForPagesMasonryGallery/MasonryGallery"
 // Styles
 import { makeStyles } from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({
@@ -100,7 +101,7 @@ export default function Home() {
 			</div>
 
 			<section className={classes.sectionContainer}>
-				<Hero title='gallery' />
+				<MasonryGallery />
 			</section>
 
 			<div>

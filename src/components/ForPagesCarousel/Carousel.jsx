@@ -36,10 +36,17 @@ const useStyles = makeStyles((theme) => ({
 	},
 }))
 
-export default function Carousel({ images }) {
-	const imgSlider = images
-
+export default function Carousel({ images, expectedprops }) {
+	const imgSlider = images || []
 	const [currentPosition, setCurrentPosition] = useState(0)
+	if (expectedprops) {
+		console.log("Carousel", {
+			images: {
+				format: ["string"],
+				maxImages: 3,
+			},
+		})
+	}
 
 	useEffect(() => {
 		setTimeout(() => {

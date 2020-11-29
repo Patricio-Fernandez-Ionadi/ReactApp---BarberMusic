@@ -1,7 +1,7 @@
 import React from "react"
 // Components
 import Hero from "../components/ForPagesHero/Hero"
-import Carousel from "../components/Carousel/Carousel"
+import Carousel from "../components/ForPagesCarousel/Carousel"
 // Styles
 import { makeStyles } from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({

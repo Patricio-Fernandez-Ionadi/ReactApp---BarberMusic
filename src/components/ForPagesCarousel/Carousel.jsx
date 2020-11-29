@@ -11,7 +11,10 @@ const useStyles = makeStyles((theme) => ({
 		width: ({ imgSlider }) => `${imgSlider.length * 100}%`,
 		height: "100%",
 		display: "flex",
-		transition: "all .15s ease",
+		transition: ({ imgSlider, currentPosition }) =>
+			currentPosition === imgSlider.length || currentPosition === 0
+				? `none`
+				: `all .15s ease`,
 		position: "relative",
 		zIndex: "-1",
 		right: ({ currentPosition }) => `${currentPosition * 100}%`,
@@ -32,10 +35,15 @@ export default function Carousel({ images, expectedprops }) {
 		console.log("Carousel", {
 			images: {
 				format: ["string"],
-				maxImages: 3,
+				maxImages: "no-max-images",
+				minImages: 1,
 			},
 		})
 	}
+
+	useEffect(() => {
+		imgSlider.push(imgSlider[0])
+	}, [])
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -45,7 +53,7 @@ export default function Carousel({ images, expectedprops }) {
 				setCurrentPosition(currentPosition + 1)
 			}
 		}, 2000)
-	}, [currentPosition])
+	}, [currentPosition, imgSlider.length])
 
 	const classes = useStyles({ imgSlider, currentPosition })
 
@@ -56,7 +64,7 @@ export default function Carousel({ images, expectedprops }) {
 					<div
 						key={each}
 						className={classes.eachImage}
-						style={{ "background-image": `url(${each})` }}
+						style={{ backgroundImage: `url(${each})` }}
 					></div>
 				))}
 			</div>

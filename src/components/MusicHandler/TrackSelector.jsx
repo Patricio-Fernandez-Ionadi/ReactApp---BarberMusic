@@ -53,12 +53,11 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function TrackSelector() {
-	const classes = useStyles()
 	const { setIsMusicPlaying, setTrackSelected, trackSelected } = useContext(
 		MusicContext
 	)
-
 	const [canSelectTrack, setCanSelectTrack] = useState(false)
+	const classes = useStyles({ trackSelected })
 
 	const handleTrackSelected = (e) => {
 		setTrackSelected(e.target.value)

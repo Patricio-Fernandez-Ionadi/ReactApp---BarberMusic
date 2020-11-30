@@ -5,6 +5,7 @@ import MobileMenu from "../Menu/MobileMenuButton"
 // Styles
 import { makeStyles } from "@material-ui/core"
 import { Link } from "react-router-dom"
+// Context
 const useStyles = makeStyles((theme) => ({
 	navBar: {
 		position: "fixed",

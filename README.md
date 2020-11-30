@@ -9,6 +9,8 @@ _vista del Home - Mobile_
 ![homeMobile](/public/assets/vistaInterfaz/HomeMobile.png)
 ![homeMobile](/public/assets/vistaInterfaz/HomeMobile1.png)
 ![homeMobile](/public/assets/vistaInterfaz/HomeMobile2.png)
+![homeMobile](/public/assets/vistaInterfaz/MenuOpening.png)
+![homeMobile](/public/assets/vistaInterfaz/MenuOpened.png)
 
 ## Comenzando 🚀
 

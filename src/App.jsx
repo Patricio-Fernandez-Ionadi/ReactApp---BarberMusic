@@ -9,17 +9,19 @@ import Home from "./pages/Home"
 import Services from "./pages/Services"
 // Context
 import { MusicContextProvider } from "./context/MusicContext"
+import { MenuContextProvider } from "./context/MenuContext"
 
 function App() {
 	return (
 		<>
-			<MusicContextProvider>
-				<NavBar />
-				<TrackSelector />
-			</MusicContextProvider>
-			<Route exact path='/' component={Home} />
-			<Route exact path='/services' component={Services} />
-			<GoTopButton />
+			<MenuContextProvider>
+				<MusicContextProvider>
+					<NavBar />
+					<TrackSelector />
+				</MusicContextProvider>
+				<Route exact path='/' component={Home} />
+				<GoTopButton />
+			</MenuContextProvider>
 		</>
 	)
 }

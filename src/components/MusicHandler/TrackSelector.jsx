@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 		listStyle: "none",
 		opacity: 0,
 		transition: "all .3s ease",
+		zIndex: 10,
 	},
 	showTrackSelector: {
 		transform: "translate(-50%, 0)",

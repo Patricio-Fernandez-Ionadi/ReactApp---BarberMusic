@@ -51,7 +51,12 @@ export default function GoTopButton() {
 	return (
 		<>
 			{isActive ? (
-				<MobileButton clickEvent={handleGoTop} bottom={20} right={20}>
+				<MobileButton
+					clickEvent={handleGoTop}
+					bottom={20}
+					right={20}
+					expectedprops
+				>
 					<LastPageIcon className={classes.goTopIcon} />
 				</MobileButton>
 			) : (

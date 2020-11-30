@@ -1,11 +1,13 @@
-import React, { useState } from "react"
-import MenuIcon from "@material-ui/icons/Menu"
+import React, { useContext } from "react"
 // Styles
-import MobileButton from "../ForPagesMobileButton/MobileButton"
 import ClearIcon from "@material-ui/icons/Clear"
+import MenuIcon from "@material-ui/icons/Menu"
 import { makeStyles } from "@material-ui/core"
 // Components
+import MobileButton from "../ForPagesMobileButton/MobileButton"
 import MobileMenuList from "./MobileMenuList"
+// Context
+import MenuContext from "../../context/MenuContext"
 
 const useStyles = makeStyles({
 	menuIcon: {
@@ -14,7 +16,7 @@ const useStyles = makeStyles({
 })
 
 export default function MobileMenu() {
-	const [isOpen, setIsOpen] = useState(false)
+	const { isOpen, setIsOpen } = useContext(MenuContext)
 
 	const handleMenu = () => {
 		setIsOpen(!isOpen)
@@ -30,7 +32,7 @@ export default function MobileMenu() {
 					<MenuIcon className={classes.menuIcon} />
 				)}
 			</MobileButton>
-			<MobileMenuList isopen={isOpen} />
+			<MobileMenuList />
 		</>
 	)
 }

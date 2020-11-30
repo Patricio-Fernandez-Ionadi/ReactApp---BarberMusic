@@ -38,7 +38,7 @@ export default function Home() {
 				title='DO IT '
 				secondspan='FOR YOU'
 			/>
-			<section className={classes.sectionContainer}>
+			<section id='about' className={classes.sectionContainer}>
 				<h2>What we do?</h2>
 				<p>
 					Since 2009 dolor sit amet consectetur adipisicing elit. Facilis
@@ -51,7 +51,7 @@ export default function Home() {
 				<h4>- We are waiting for you! -</h4>
 			</section>
 
-			<section className={classes.sectionContainer}>
+			<section id='services' className={classes.sectionContainer}>
 				<h2>Our Services</h2>
 				<div>
 					<h3>Corte</h3>

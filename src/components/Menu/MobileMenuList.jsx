@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import MenuContext from "../../context/MenuContext"
 import { Link } from "react-router-dom"
 import { makeStyles } from "@material-ui/core"
@@ -44,7 +44,9 @@ export default function MobileMenuList({ isopen }) {
 
 	const { isOpen, setIsOpen } = useContext(MenuContext)
 
-	const handleMenu = () => {
+	const [isActive, setIsActive] = useState()
+
+	const handleMenu = (e) => {
 		setIsOpen(false)
 	}
 
@@ -56,17 +58,20 @@ export default function MobileMenuList({ isopen }) {
 				}
 			>
 				<ul className={classes.linkList}>
-					<Link onClick={handleMenu} to='#about'>
+					<Link onClick={handleMenu} to='/' value='home'>
+						Home
+					</Link>
+					<Link onClick={handleMenu} to='/about' value='about'>
 						About Us
 					</Link>
-					<Link onClick={handleMenu} to='#services'>
+					<Link onClick={handleMenu} to='/services' value='services'>
 						Our Services
 					</Link>
-					<Link onClick={handleMenu} to='#gallery'>
-						Gallery
+					<Link onClick={handleMenu} to='/branches' value='branches'>
+						Branches
 					</Link>
-					<Link onClick={handleMenu} to='#form'>
-						Send us a message
+					<Link onClick={handleMenu} to='/contact' value='contact'>
+						Contact Us
 					</Link>
 				</ul>
 			</div>

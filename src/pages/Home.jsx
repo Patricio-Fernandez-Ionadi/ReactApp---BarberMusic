@@ -1,9 +1,12 @@
 import React from "react"
+import { Link } from "react-router-dom"
 // Components
 import Hero from "../components/ForPagesHero/Hero"
 import Carousel from "../components/ForPagesCarousel/Carousel"
 import MasonryGallery from "../components/ForPagesMasonryGallery/MasonryGallery"
 // Styles
+import FacebookIcon from "@material-ui/icons/Facebook"
+import InstagramIcon from "@material-ui/icons/Instagram"
 import { makeStyles } from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({
 	sectionContainer: {
@@ -25,6 +28,11 @@ const useStyles = makeStyles((theme) => ({
 			textAlign: "center",
 			margin: 0,
 		},
+		"& a": {
+			textDecoration: "none",
+			color: "#09f",
+			textAlign: "center",
+		},
 	},
 }))
 
@@ -38,7 +46,7 @@ export default function Home() {
 				title='DO IT '
 				secondspan='FOR YOU'
 			/>
-			<section id='about' className={classes.sectionContainer}>
+			<section className={classes.sectionContainer}>
 				<h2>What we do?</h2>
 				<p>
 					Since 2009 dolor sit amet consectetur adipisicing elit. Facilis
@@ -49,9 +57,10 @@ export default function Home() {
 					exercitationem modi animi.
 				</p>
 				<h4>- We are waiting for you! -</h4>
+				<Link to='/about'>See more about us...</Link>
 			</section>
 
-			<section id='services' className={classes.sectionContainer}>
+			<section className={classes.sectionContainer}>
 				<h2>Our Services</h2>
 				<div>
 					<h3>Corte</h3>
@@ -84,6 +93,7 @@ export default function Home() {
 						El mini BACAN sabe lo que quiere, por eso atendemos sus antojos.
 					</p>
 				</div>
+				<Link to='/services'>See more about our services...</Link>
 			</section>
 
 			<section className={classes.sectionContainer}>
@@ -134,18 +144,20 @@ export default function Home() {
 					<h3>Branch Name</h3>
 					<p>Location</p>
 				</div>
+				<Link to='/branches'>See more about our branches...</Link>
 			</section>
 
 			<section className={classes.sectionContainer}>
 				<h2>Socials</h2>
 				<div>
-					<p>icon</p>
+					<FacebookIcon />
 				</div>
 				<div>
-					<p>icon</p>
+					<InstagramIcon />
 				</div>
 			</section>
 
+			{/* SEPARAR EN COMPONENTE FORM */}
 			<section className={classes.sectionContainer}>
 				<h2>Send us your consultation</h2>
 				<form>

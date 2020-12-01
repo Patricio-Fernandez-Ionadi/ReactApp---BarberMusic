@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 		border: "none",
 		color: "#ccc",
 		transition: "all .3s ease",
+		zIndex: 999,
 		"& p": {
 			margin: 0,
 		},

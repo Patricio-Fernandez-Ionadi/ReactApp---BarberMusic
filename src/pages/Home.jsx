@@ -118,6 +118,7 @@ export default function Home() {
 						images={[
 							"/assets/images/gallery1.jpg",
 							"/assets/images/gallery2.jpg",
+							"/assets/images/gallery1.jpg",
 							"/assets/images/gallery3.jpg",
 							"/assets/images/gallery4.jpg",
 							"/assets/images/gallery5.jpg",

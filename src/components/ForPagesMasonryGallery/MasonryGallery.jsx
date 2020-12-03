@@ -1,26 +1,32 @@
-import React, { useState } from "react"
+import React, {createElement, useRef, useState} from 'react'
 import { makeStyles } from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({
-	mainContainer: {
-		width: "100%",
-		height: ({ imagesToUse }) => `${imagesToUse.length * 100}vh`,
-	},
-	galleryContainer: {
-		width: "100%",
-		height: "100%",
-		display: "grid",
-		gridTemplateRows: ({ imagesToUse }) => `repeat(${imagesToUse.length}, 1fr)`,
-		gap: "10px",
-		[theme.breakpoints.up("sm")]: {
-			gridTemplateColumns: "repeat(2, 1fr)",
+
+	masonryLayout: {
+		width: "1200px",
+		maxWidth: "100%",
+		backgroundColor: "darkcyan",
+		columns: 1,
+		padding: "5px",
+		columnGap: "5px",
+		[theme.breakpoints.up('sm')]:{
+			columns: 2
 		},
+		[theme.breakpoints.up('md')]:{
+			columns: 4
+		},
+		[theme.breakpoints.up('lg')]:{
+			columns: 5
+		}
+	},
+	masonryBox:{
+		width: "100%",
+		margin: "0 0 5px",
+		overflow: "hidden",
+		breakInside: "avoid"
 	},
 	eachImage: {
-		width: "100%",
-		display: "inline-block",
-		backgroundSize: "cover",
-		backgroundRepeat: "no-repeat",
-		backgroundPosition: "center",
+		maxWidth: "100%",
 	},
 }))
 
@@ -33,25 +39,26 @@ export default function MasonryGallery({ images, expectedprops }) {
 			type: [],
 			format: "ruta de imagen",
 			max_images: "no-max-images",
-			min_images: "recomended 5",
+			min_images: "recommended 5",
 		}
 		console.log(PROPS_EXPECTED)
 	}
 	const imagesToUse = images || []
-	const classes = useStyles({ imagesToUse })
-	console.log(imagesToUse.length)
+	const classes = useStyles()
 
 	return (
-		<div className={classes.mainContainer}>
-			<div className={classes.galleryContainer}>
+		<div className={classes.masonryLayout}>
 				{imagesToUse.map((each) => (
-					<div
-						key={each}
-						className={classes.eachImage}
-						style={{ backgroundImage: `url(${each})` }}
-					></div>
+					<div className={classes.masonryBox}>
+						<img
+							key={each}
+							alt='GalleryPicture'
+							className={classes.eachImage}
+							src={each}
+						/>
+					</div>
+				
 				))}
-			</div>
 		</div>
 	)
 }

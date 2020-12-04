@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { makeStyles } from "@material-ui/core"
+import { generate as id } from "shortid"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
@@ -62,7 +63,7 @@ export default function Carousel({ images, expectedprops }) {
 			<div className={classes.imgContainer}>
 				{imgSlider.map((each) => (
 					<div
-						key={each}
+						key={id()}
 						className={classes.eachImage}
 						style={{ backgroundImage: `url(${each})` }}
 					></div>

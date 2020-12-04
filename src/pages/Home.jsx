@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import Hero from "../components/ForPagesHero/Hero"
 import Carousel from "../components/ForPagesCarousel/Carousel"
 import MasonryGallery from "../components/ForPagesMasonryGallery/MasonryGallery"
-import Form from '../components/ForPagesForm/Form'
+import Form from "../components/ForPagesForm/Form"
 // Styles
 import FacebookIcon from "@material-ui/icons/Facebook"
 import InstagramIcon from "@material-ui/icons/Instagram"
@@ -119,7 +119,6 @@ export default function Home() {
 						images={[
 							"/assets/images/gallery1.jpg",
 							"/assets/images/gallery2.jpg",
-							"/assets/images/gallery1.jpg",
 							"/assets/images/gallery3.jpg",
 							"/assets/images/gallery4.jpg",
 							"/assets/images/gallery5.jpg",
@@ -170,12 +169,10 @@ export default function Home() {
 						<InstagramIcon />
 					</div>
 				</section>
-				
+
 				<section className={classes.sectionContainer}>
 					<Form />
 				</section>
-				
-				
 			</Container>
 
 			<section className={classes.sectionContainer}>

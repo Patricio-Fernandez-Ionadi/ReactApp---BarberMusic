@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import Hero from "../components/ForPagesHero/Hero"
 import Carousel from "../components/ForPagesCarousel/Carousel"
 import MasonryGallery from "../components/ForPagesMasonryGallery/MasonryGallery"
+import Form from '../components/ForPagesForm/Form'
 // Styles
 import FacebookIcon from "@material-ui/icons/Facebook"
 import InstagramIcon from "@material-ui/icons/Instagram"
@@ -169,24 +170,12 @@ export default function Home() {
 						<InstagramIcon />
 					</div>
 				</section>
-
-				{/* SEPARAR EN COMPONENTE FORM */}
+				
 				<section className={classes.sectionContainer}>
-					<h2>Send us your consultation</h2>
-					<form>
-						<label htmlFor='name'>Name</label>
-						<input type='text' placeholder='Your name...' />
-
-						<label htmlFor='email'>Email</label>
-						<input type='text' placeholder='Your email...' />
-
-						<textarea
-							name='query'
-							id='query'
-							placeholder='style= resize: none'
-						></textarea>
-					</form>
+					<Form />
 				</section>
+				
+				
 			</Container>
 
 			<section className={classes.sectionContainer}>

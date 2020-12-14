@@ -75,7 +75,7 @@ export default function Form() {
 	const handleChange = (e) => {
 		if (e.target.name === "email") setEmail(e.target.value)
 		if (e.target.name === "name") setName(e.target.value)
-		if (e.target.name === "query") setMessage(e.target.value)
+		if (e.target.name === "area") setMessage(e.target.value)
 	}
 
 	return (
@@ -112,15 +112,15 @@ export default function Form() {
 
 				<div className={classes.textAreaContainer}>
 					{message === "" ? (
-						<label className={classes.textAreaLabel} htmlFor='query'>
+						<label className={classes.textAreaLabel} htmlFor='area'>
 							Message...
 						</label>
 					) : null}
 					<textarea
 						onChange={handleChange}
 						className={classes.textAreaInput}
-						name='query'
-						id='query'
+						name='area'
+						id='area'
 					/>
 				</div>
 			</form>
